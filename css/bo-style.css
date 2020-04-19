@@ -1,0 +1,246 @@
+
+
+/* Fonts */
+
+H1 {
+    font-size: 20px;
+    /* font-size: 1.25em; */
+    font-weight: bold;
+    color:var(--text-dark);
+}
+
+
+H2 {
+    font-weight: 700;
+    font-size: 1em;
+    color:var(--text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+H5 {
+    font-weight: 400;
+    font-size: .5em;
+}
+
+/* used for green * after required */
+/* .required {
+    font-weight: 500;
+    color:var(--text-dark);
+} */
+
+
+/* .a_1 {
+
+}
+
+.a_2 */
+
+
+/* some functional css */
+
+/* green color for required */
+.fc_pr {
+    color:var(--text-primary);
+}
+
+.flex{
+    display:flex;
+}
+
+
+.flex-jstf-btwn{
+    justify-content: space-between;
+}
+
+.block{
+    display:block;
+}
+
+.inline{
+    display:inline-block;
+}
+
+.wd_180{
+    width:180px;
+}
+
+.wd_290{
+    width:290px;
+}
+
+.wd_265{
+    width: 265px;
+}
+
+.wd_375{
+    width: 375px;
+}
+
+.wd_790{
+    width: 790px;
+}
+
+.wd_987{
+    width: 987px;
+}
+
+.wd_995{
+    width: 995px;
+}
+
+.wd_1024{
+    width: 1024px
+}
+
+.ht_110{
+    height:110px;
+}
+
+
+.hr {
+    width: 1050px;
+    border-top: 1px solid var(--text-neutral);
+}
+
+
+
+
+
+
+/* Buttons */
+
+Button {
+    padding: 0.5em 1.25em;
+    border: none;
+    border-radius: 1.333em;
+    box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
+    background-color: var(--secondary);
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-light);
+    float:right;
+}
+
+
+/* Pink submit button  */
+.profile .right-editable button[type="submit"] {
+    padding: 0.5em 1.25em;
+    border: none;
+    border-radius: 1.333em;
+    box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
+    background-color: var(--secondary);
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-light);
+    float:right;
+}
+.profile .right-editable button[type="submit"]:hover {
+    background-color: var(--hover-secondary);
+}
+.profile .right-editable button[type="submit"][disabled] {
+    background-color: var(--light-neutral);
+    color: var(--text-light-neutral);
+}
+
+
+
+/* Input Fileds */
+.input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0.5em 2.222em 0.5em 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.5em;
+    border: 1px solid var(--text-neutral);
+}
+
+.input--pencil {
+    background: url(../images/Pencil.svg) no-repeat right 1em center;
+    background-size: 1.25em;
+}
+
+.input--downarrow {
+    background: url(../images/Arrow-Down.svg) no-repeat right 1.1em center;
+    background-size: 1em;
+}
+
+
+
+
+
+/* Layout */
+/* Layout is justtifed from left */
+
+/* page spacing */
+.container{
+    display:flex;
+    padding: 10px 0;
+}
+
+.col_a{
+    width:var(--logo-width);
+}
+
+.col_a_sm{
+    width: calc(var(--logo-width) + 1.5rem);
+}
+
+.col_a_med{
+    width: calc(var(--logo-width) + 7.25rem);
+}
+
+
+
+
+.col_drag_drop{
+    display:flex;
+    width:790px;
+    height: 149px;
+    border: 2px dashed var(--text-neutral); 
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    background-color: bisque;
+    height: 122px;
+    width: 80px;
+}
+
+
+/* page specific blocks */
+
+
+.input_piece_name{
+    width: 590px;
+}
+
+.number_of_pieces{
+    width: 169px;
+    margin: 0 29px;
+}
+
+.uploaded_files {
+    min-height:200px;
+    
+}
+
+.input_dimensions {
+    width: 790px;
+}
+
+
+
+
+
+
+
+
+
+
