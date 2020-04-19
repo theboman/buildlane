@@ -4,7 +4,7 @@
 - PHP or Javascript? 
 - using Twig
 ---
-#### Todos
+#### :white_check_mark: Todos
 - [ ] style check box / radio
 - [ ] style button with graphic
 - [ ] style button with graphic
@@ -12,5 +12,7 @@
 - [ ] focus on firefox - fix with hover
 - [ ] card uploaded images
 - [ ] card factory
+- [ ] select drop down styling /drop shadow etc
+
 
 
