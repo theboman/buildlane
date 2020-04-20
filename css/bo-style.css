@@ -166,6 +166,7 @@
 .hr {
     width: 1050px;
     border-top: 1px solid var(--text-neutral);
+    padding-top: 10px;
 }
 
 
