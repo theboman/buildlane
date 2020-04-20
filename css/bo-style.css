@@ -16,39 +16,53 @@
 
 /* 1.1 Fonts */
 
-H1 {
-    font-size: 20px;
+/* functional */
+.h1 {
+    font-size: 30px;
     /* font-size: 1.25em; */
-    font-weight: bold;
+    font-weight: 700;
     color:var(--text-dark);
+    margin:.75em;
 }
 
 
-H2 {
+.h2 {
+    font-size: 20px;
     font-weight: 700;
-    font-size: 1em;
     color:var(--text-dark);
     margin: 0;
     padding: 0;
 }
 
-H5 {
-    font-weight: 400;
-    font-size: .5em;
-}
-
-/* used for green * after required */
-/* .required {
-    font-weight: 500;
+.h3 {
+    font-size: 16px;
+    font-weight: 700;
     color:var(--text-dark);
-} */
-
-
-/* .a_1 {
-
+    margin: 0;
+    padding: 0;
 }
 
-.a_2 */
+.p1 {
+    
+    font-size: 16px;
+    font-weight: 500;
+    color:var(--text-paragraph);
+}
+
+.p2 {
+    
+    font-size: 15px;
+    font-weight: 500;
+    color:var(--text-paragraph);
+}
+
+.p3 {
+    
+    font-size: 12px;
+    font-weight: 500;
+    color:var(--text-paragraph);
+}
+
 
 
 /* 1.2 Functional css */
@@ -67,12 +81,24 @@ H5 {
     justify-content: space-between;
 }
 
+.flex-jstf-center{
+    justify-content: center;
+}
+
+.flex-align-baseline{
+    align-items: baseline;
+}
+
 .block{
     display:block;
 }
 
 .inline{
     display:inline-block;
+}
+
+.wd_169{
+    width:169px;
 }
 
 .wd_180{
@@ -89,6 +115,10 @@ H5 {
 
 .wd_375{
     width: 375px;
+}
+
+.wd_590{
+    width: 590px;
 }
 
 .wd_790{
@@ -127,9 +157,9 @@ H5 {
 
 
 
-/* Buttons */
+/* 2.1 Buttons */
 
-Button {
+/* Button {
     padding: 0.5em 1.25em;
     border: none;
     border-radius: 1.333em;
@@ -140,7 +170,46 @@ Button {
     text-align: center;
     color: var(--text-light);
     float:right;
+} */
+
+
+.button-icon {
+    margin:30px;
+    padding: 0.5em 1.25em 0.5em 45px;
+    border: 2px solid var(--neutral);
+    border-radius: 28.5px;
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,0.1);
+    background-color: var(--light);
+    font-size: 1.125em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-paragraph);
+    float: left;
+    clear: both;
+    height:60px;
+    background: url(../images/Pencil.svg) no-repeat 1em center;
+    background-size: 32px;
+    background-position:20px center;
+
+    
 }
+
+
+
+.button-icon:hover {
+    
+    border: 2px solid var(--primary);
+
+    box-shadow: 0 5px 4px 0 rgba(0,0,0,0.1);
+    background-color: var(--hover-primary);
+    color: var(--text-primary);
+    background: url(../images/Pencil.svg) no-repeat 1em center;
+    background-size: 32px;
+    background-position:20px center;
+    /* float:right; */
+}
+
+
 
 
 /* Pink submit button  */
@@ -199,7 +268,7 @@ Button {
 }
 
 /* ---------------------------------------- */
-/* ------------------Cards----------------- */
+/* ----------------2.2 Cards--------------- */
 /* ---------------------------------------- */
 
 .card-upload-images{
@@ -315,9 +384,7 @@ Button {
 /* page specific blocks */
 
 
-.input_piece_name{
-    width: 590px;
-}
+
 
 .number_of_pieces{
     width: 169px;

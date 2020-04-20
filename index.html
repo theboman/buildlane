@@ -158,58 +158,63 @@
     <div class="container container-title-create">
 
         <div class="col_a"></div>
-
         <div class="col_b">
             <div class="item">
-                <h1 class="section-title">Create RFQ</h1>
-                <div class="required">Required <span class="fc_pr" >*</span></div>
+                <div class="section-title h2">Create RFQ</div>
+                <div class="p2">
+                    Required <span class="fc_pr" >*</span>
+                </div>
             </div>
         </div>
 
     </div>
 
     
-    <div class="container container-input-name" style='background-color: #eeeeee;'>
+    <div class="container container-input-name">
         <div class="col_a_med"></div>
         
-        <div class="col_b">  
-            <div class="flex">
-                <div>
-                    <h2>
-                    <label for="piece_name">Piece Name <span class="fc_pr">*</span></label>
-                    </h2 >  
-                    <div class="input_piece_name">
-                    <input class="input input--pencil" type="text" placeholder="My Wonderful Chair" value="piece_name" id="piece_name">
+        <div class="wd_790">  
+            
+            <div class="flex flex-jstf-btwn wd_790">
+                    <div class="input-group-piece-name wd_590">
+                        <label class="h3" for="piece_name">Piece Name <span class="fc_pr">*</span></label>
+                        <input class="input-piece-name input input--pencil" type="text" placeholder="My Wonderful Chair" value="" id="piece_name">
                     </div>
-                </div>
-                <div class="number_of_pieces">
-                    <h2>
-                    <label for="piece_qty">Quantity <span class="fc_pr">*</span> </label>
-                    </h2>
-                    <div class="">
-                    <input class="input input--pencil" type="text" placeholder="Quantity" id='piece_qty'>
+                    <div class="wd_169 input-group-quantity">
+                        <label class="h3" for="piece_qty">Quantity <span class="fc_pr">*</span></label>
+                        <input class="input-quantity input input--pencil" type="text" placeholder="Quantity" id='piece_qty' value="">
                     </div>
-                </div>
             </div>
 
-            <div class="input_piece_name">
-                    <h2>
-                    <label for="add_to_project">Add To Project <span class="fc_pr">*</span></label>
-                    </h2>
-                    <select class="input input--downarrow" id="add_to_project" name="add_to_project">
-                        <option value="project_1">Project_1</option>
-                        <option value="project_2">Project_2</option>
-                        <option value="project_3">Project_3</option>
-                        <option value="project_4">Project_4</option>
+            <div class="input-group-piece-name wd_590">
+                    <label class="h3" for="add_to_project">Add To Project <span class="fc_pr">*</span></label><a href="#">Create New Project</a>
+                    <select class="input-addtoproject input input--downarrow" id="add_to_project" name="add_to_project">
+                        <option value="project 1">Project_1</option>
+                        <option value="project 2">Project_2</option>
+                        <option value="project 3">Project_3</option>
+                        <option value="project 4">Project_4</option>
                     </select>
+            
             </div>
 
-            <h2 class="cat">
+            <div class="label-catagory h3">
                  Catagory <span class="fc_pr">*</span>
-            </h2>
-             <div>
-                 <button>btn1</button>
-                 <button>btn2</button>
+            </div>
+             <div class="flex flex-jstf-center">
+                 <!-- <div class="button-icon">
+                        <div class="flex">
+                        <div>
+                        <img src="../images/Pencil.svg" alt="">
+                        </div>
+                        <div>
+                        Upholstery
+                        
+                        </div>
+                    </div>
+                </div> -->
+                <button class="button-icon">Upholstery</button>
+                <button class="button-icon">Casegoods</button>
+                <button class="button-icon">Metal</button>
             </div>
         </div>
     </div>  
