@@ -77,10 +77,10 @@
     
 }
 
+
 .tx-alg-right{
     align-content: right;
 }
-
 
 
 /* 1.2 Functional css */
@@ -94,7 +94,6 @@
     display:flex;
 }
 
-
 .flex-jstf-btwn{
     justify-content: space-between;
 }
@@ -102,7 +101,6 @@
 .flex-jstf-center{
     justify-content: center;
 }
-
 
 
 .block{
@@ -113,6 +111,7 @@
     display:inline-block;
 }
 
+/* widths */
 .wd_169{
     width:169px;
 }
@@ -172,9 +171,9 @@
 
 
 
-
-
-/* 2.1 Buttons */
+/* ---------------------------------------- */
+/* --------------2.1 Buttons--------------- */
+/* ---------------------------------------- */
 
 /* Button {
     padding: 0.5em 1.25em;
@@ -189,7 +188,7 @@
     float:right;
 } */
 
-
+/* --------Button with Icon to the left rounded ends --------- */
 .btn-icon {
     margin:25px;
     padding: 0.5em 1.25em 0.5em 65px;
@@ -241,6 +240,12 @@
     background-size: auto 32px;
     background-position:20px center;
 }
+
+/*  ---------VVV end VVV ------------- */
+
+
+
+
 
 
 
