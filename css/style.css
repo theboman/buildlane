@@ -86,6 +86,8 @@ html {
     padding: 0;
     font-family: var(--font-family);
     color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body { margin: 0; }

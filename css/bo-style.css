@@ -63,6 +63,24 @@
     color:var(--text-paragraph);
 }
 
+.a {
+    font-size:16px;
+    font-weight: 500;
+    text-decoration: underline;
+    color:var(--text-primary);
+}
+
+.a:hover{
+    
+    text-decoration: underline;
+    color:var(--text-paragraph);
+    
+}
+
+.tx-alg-right{
+    align-content: right;
+}
+
 
 
 /* 1.2 Functional css */
@@ -85,9 +103,7 @@
     justify-content: center;
 }
 
-.flex-align-baseline{
-    align-items: baseline;
-}
+
 
 .block{
     display:block;
@@ -146,7 +162,7 @@
     height:110px;
 }
 
-
+/* line break */
 .hr {
     width: 1050px;
     border-top: 1px solid var(--text-neutral);
@@ -173,41 +189,58 @@
 } */
 
 
-.button-icon {
-    margin:30px;
-    padding: 0.5em 1.25em 0.5em 45px;
+.btn-icon {
+    margin:25px;
+    padding: 0.5em 1.25em 0.5em 65px;
     border: 2px solid var(--neutral);
     border-radius: 28.5px;
     box-shadow: 0 5px 4px 0 rgba(0,0,0,0.1);
     background-color: var(--light);
-    font-size: 1.125em;
+    font-size: 18px;
     font-weight: bold;
-    text-align: center;
     color: var(--text-paragraph);
-    float: left;
-    clear: both;
     height:60px;
-    background: url(../images/Pencil.svg) no-repeat 1em center;
+    background: url(../images/upholstery_color_paragraph.svg) no-repeat 1em center;
     background-size: 32px;
     background-position:20px center;
-
-    
 }
 
-
-
-.button-icon:hover {
-    
+.btn-icon:hover {
     border: 2px solid var(--primary);
-
-    box-shadow: 0 5px 4px 0 rgba(0,0,0,0.1);
+    box-shadow: none;
     background-color: var(--hover-primary);
     color: var(--text-primary);
-    background: url(../images/Pencil.svg) no-repeat 1em center;
+    background: url(../images/upholstery_color_primary.svg)no-repeat 1em center;
     background-size: 32px;
     background-position:20px center;
     /* float:right; */
 }
+
+.btn-icon--casegoods{
+    background: url(../images/casegoods_color_paragraph.svg) no-repeat 1em center;
+    background-size: 32px;
+    background-position:20px center;
+}
+
+.btn-icon--casegoods:hover{
+    background: url(../images/casegoods_color_primary.svg) no-repeat 1em center;
+    background-size: 32px;
+    background-position:20px center;
+}
+
+.btn-icon--metal{
+    padding: 0.5em 1.25em 0.5em 88px;
+    background: url(../images/metal_btn_color_paragraph.svg) no-repeat 1em center;
+    background-size: auto 32px;
+    background-position:20px center;
+}
+
+.btn-icon--metal:hover{
+    background: url(../images/metal_btn_color_primary.svg) no-repeat 1em center;
+    background-size: auto 32px;
+    background-position:20px center;
+}
+
 
 
 
@@ -240,7 +273,7 @@
 
 .input {
     width: 100%;
-    margin: 5px 0;
+    margin: 1px 0 10px 0;
     padding: 0.5em 2.222em 0.5em 1em;
     -webkit-appearance: none;
     -moz-appearance: none;
