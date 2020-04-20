@@ -348,7 +348,6 @@ container - flex
     /* border: 1px solid var(--text-neutral);  */
     box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
     transform: scale(1.03);
-    
 }
 
 .card--upload_spacer{
@@ -363,22 +362,26 @@ container - flex
     height: 32px;
     background: url(../images/delete-image2.svg) no-repeat center;
     background-size: cover;
-    /* background-color: red; */
-    /* transition: all .2s ease-in-out; */
 }
 
 .card--upload_delete:hover{
     background: url(../images/delete-image2.svg) no-repeat center;
     background-size: cover;
-    /* transform: */
-    /* background-color: pink; */
+}
+
+.card--upload_img_box {
+    display:flex;
+    width: 85px;
+    height: 85px;
+    justify-content: end;
 }
 
 .card--upload_img {
-    z-index: 1;
+    margin:0;
+    padding:0;
+    object-fit: contain;
     width: 85px;
     height: 85px;
-    /* background-color: green; */
 }
 
 .card--upload_description{
@@ -387,7 +390,6 @@ container - flex
     text-align: center;
     word-wrap: break-word;
     overflow:hidden;
-    /* background-color: pink; */
 }
 
 
