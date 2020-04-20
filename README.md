@@ -1,6 +1,9 @@
 # Buildlane
 
-## :question: Questions on communication between front end backend?
+- live staging server for review
+[Live server](https://priceless-mayer-6b4cb7.netlify.app/)
+
+## :question: Questions on communication between front end backend :question:
 - PHP or Javascript? 
 - using Twig
 ---
