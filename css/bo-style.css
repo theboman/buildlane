@@ -1,22 +1,42 @@
 /* 
----------------------------------------- 
+----------------------------------------
+approach used for page layout
+what has been used is a flex box container
+and a left and right column
+the left Col A is to indent
+right Col B is the content
+
+container - flex 
+-----------------------------------------
+|   col A   |         col B             |
+|           |                           |
+-----------------------------------------
+
+
+
+
+
+* note this could also be a grid.
+
+
 ------------Table of Contents----------- 
 1 Globals 
     1.1 Fonts 
     1.2 Functional CSS Definitions 
+        
 
 2 Components 
     2.1 Buttons 
     2.2 Cards   
+    2.3 Inputs
 
-3 Layout                                 
+3 Layout container specific 
+
 ---------------------------------------- 
 */
 
 
 /* 1.1 Fonts */
-
-/* functional */
 .h1 {
     font-size: 30px;
     /* font-size: 1.25em; */
@@ -241,15 +261,7 @@
     background-position:20px center;
 }
 
-/*  ---------VVV end VVV ------------- */
-
-
-
-
-
-
-
-
+/*  VVV - end button icon - VVV *
 
 /* Pink submit button  */
 .profile .right-editable button[type="submit"] {
@@ -310,7 +322,10 @@
 /* ----------------2.2 Cards--------------- */
 /* ---------------------------------------- */
 
-.card-upload-images{
+
+/* Card-Upload  Add inspiration  */
+
+.card--upload-inspiration{
     position: relative;
     width: 100px;
     height: 130px;
@@ -318,14 +333,18 @@
     transition: all .2s ease-in-out;
 }
 
-.card-upload-images:hover{
+.card--upload-inspiration:hover{
     /* border: 1px solid var(--text-neutral);  */
 
     transform: scale(1.03);
 }
 
+.card--upload-spacer{
+    height:15px;
+}
 
-.card-upload_delete{
+
+.card--upload_delete{
     position: absolute;
     left: 68px;
     z-index: 2;
@@ -338,11 +357,7 @@
     /* transition: all .2s ease-in-out; */
 }
 
-.card-upload-spacer{
-    height:15px;
-}
-
-.card-upload_delete:hover{
+.card--upload_delete:hover{
     background: url(../images/delete-image2.svg) no-repeat center;
     background-size: cover;
     
@@ -350,7 +365,8 @@
     /* background-color: pink; */
 }
 
-.card-upload_img {
+
+.card--upload_img {
     /* position: absolute;
     left: 5px; */
     z-index: 1;
@@ -360,7 +376,7 @@
 
 }
 
-.card-upload-description{
+.card--upload-description{
 
 }
 
