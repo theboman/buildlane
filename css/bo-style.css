@@ -169,6 +169,10 @@ container - flex
     width: 987px;
 }
 
+.wd_926{
+    width: 926px;
+}
+
 .wd_995{
     width: 995px;
 }
@@ -188,19 +192,20 @@ container - flex
 
 
 /* leftmost column spacer, indent */
+
 .col_a{
     width:var(--logo-width);
 }
 
+/* logo+24px */
 .col_a_sm{
     width: calc(var(--logo-width) + 1.5rem);
 }
 
+/* logo+116px */
 .col_a_med{
     width: calc(var(--logo-width) + 7.25rem);
 }
-
-
 
 
 /* line break */
@@ -231,6 +236,7 @@ container - flex
 } */
 
 /* --------Button with Icon to the left rounded ends --------- */
+
 .btn-icon {
     margin:25px;
     padding: 0.5em 1.25em 0.5em 65px;
@@ -293,13 +299,12 @@ container - flex
 
 
 
-
-
-
-
-/* Pink submit button  */
-.profile .right-editable button[type="submit"] {
+/* btn submit pink   */
+button[type="submit"] {
+    width:225px;
+    height:50px;
     padding: 0.5em 1.25em;
+    margin: 20px 30px;
     border: none;
     border-radius: 1.333em;
     box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
@@ -310,10 +315,11 @@ container - flex
     color: var(--text-light);
     float:right;
 }
-.profile .right-editable button[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: var(--hover-secondary);
 }
-.profile .right-editable button[type="submit"][disabled] {
+
+button[type="submit"][disabled] {
     background-color: var(--light-neutral);
     color: var(--text-light-neutral);
 }
@@ -322,7 +328,27 @@ container - flex
 /* --------------Input Fileds-------------- */
 /* ---------------------------------------- */
 
+.input--txt-area_additional_notes {
 
+    width: 792px;
+    height: 110px;
+    margin: 1px 0 10px 0;
+    padding: 0.5em 2.222em 0.5em 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.5em;
+    border: 1px solid var(--text-neutral);
+    background: url(../images/Pencil.svg) no-repeat;
+    background-size: 22px;
+    background-position:756px 10px;
+    resize: none;
+}
+
+
+
+
+/* input that pushs the graphic right */
 .input {
     width: 100%;
     margin: 1px 0 10px 0;
@@ -421,7 +447,6 @@ container - flex
 
 /* ---------- card--factory -------------*/
 
-
 .card--factory{
     padding:5px;
     margin:10px 5px;
@@ -430,18 +455,11 @@ container - flex
     border-radius: 5px;
     box-shadow: none;
     transition: all .2s ease-in-out;
-    /* background-color: teal; */
 }
 
 .card--factory:hover{
     box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
     transform: scale(1.03);
-
-    /* padding:5px;
-    margin:5px;
-    width: 200px;
-    height: 180px; */
-    
 }
 
 .card--factory__container_top{
@@ -449,11 +467,9 @@ container - flex
     display:inline-flex;
 }
 
-.col_a_30{
-    
+.card--col_a{
     width:17px;
     height:97px;
-    /* border:1px solid #999999; */
 }
 
 .card--factory__checkbox{

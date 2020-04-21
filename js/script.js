@@ -1,6 +1,6 @@
 /* Click Off */
 
-$('body').click(function() {
+$('body').click(function () {
     $('#menu div').addClass('hidden');
     $('.info-bubble').addClass('invisible');
     $('.quote-buttons-container').addClass('hidden');
@@ -8,7 +8,7 @@ $('body').click(function() {
 
 /* Menu */
 
-$('#menu img').click(function(e) {
+$('#menu img').click(function (e) {
     e.stopPropagation();
 
     $(this).parent().find('div').toggleClass('hidden');
@@ -16,10 +16,19 @@ $('#menu img').click(function(e) {
 
 /* Site Header */
 
-$('.request-quote > img').click(function(e) {
+$('.request-quote > img').click(function (e) {
     e.stopPropagation();
 
     $(this).parent().find('.quote-buttons-container').toggleClass('hidden');
 });
 
 /* ADD JS HERE */
+
+
+const myFactories = [
+    {
+        'name': 'factory1',
+        'city': 'los angeles'
+
+    }
+];
