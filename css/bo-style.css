@@ -186,6 +186,23 @@ container - flex
     height:110px;
 }
 
+
+/* leftmost column spacer, indent */
+.col_a{
+    width:var(--logo-width);
+}
+
+.col_a_sm{
+    width: calc(var(--logo-width) + 1.5rem);
+}
+
+.col_a_med{
+    width: calc(var(--logo-width) + 7.25rem);
+}
+
+
+
+
 /* line break */
 .hr {
     width: 1050px;
@@ -266,7 +283,19 @@ container - flex
     background-position:20px center;
 }
 
-/*  VVV - end button icon - VVV *
+
+/* btn--map--location */
+
+.btn--map-location{
+    
+    background: url(../images/location.svg) no-repeat center;
+}
+
+
+
+
+
+
 
 /* Pink submit button  */
 .profile .right-editable button[type="submit"] {
@@ -328,24 +357,20 @@ container - flex
 /* ---------------------------------------- */
 
 
-/* Card-Upload  Add inspiration  */
+/* Card--Upload  Add inspiration     */
+/* !!!need to fix the bem names vVv */
 
 .card--upload_inspiration{
-
     position: relative;
     width: 100px;
-    height: 150px;
-    /* background-color: blue; */
-    /* border: 1px solid #888888; */
+    height: 130px;
     border-radius: 5px;
     box-shadow: none;
     transition: all .2s ease-in-out;
     margin: 2px 5px;
-
 }
 
 .card--upload_inspiration:hover{
-    /* border: 1px solid var(--text-neutral);  */
     box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
     transform: scale(1.03);
 }
@@ -385,12 +410,112 @@ container - flex
 }
 
 .card--upload_description{
-    height:42px;
+    height:28px;
     padding: 3px;
     text-align: center;
     word-wrap: break-word;
     overflow:hidden;
 }
+
+
+
+/* ---------- card--factory -------------*/
+
+
+.card--factory{
+    padding:5px;
+    margin:10px 5px;
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: all .2s ease-in-out;
+    /* background-color: teal; */
+}
+
+.card--factory:hover{
+    box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
+    transform: scale(1.03);
+
+    /* padding:5px;
+    margin:5px;
+    width: 200px;
+    height: 180px; */
+    
+}
+
+.card--factory__container_top{
+    width:100%;
+    display:inline-flex;
+}
+
+.col_a_30{
+    
+    width:17px;
+    height:97px;
+    /* border:1px solid #999999; */
+}
+
+.card--factory__checkbox{
+    margin:0 5px;
+    width: 23px;
+    height: 23px;
+    border-radius: 2px;
+    border:1px solid #909090;
+    
+}
+
+.card--factory__checkbox:hover{
+    /* margin:0 5px;
+    width: 23px;
+    height: 23px;
+    border-radius: 2px; */
+    background-color: var(--primary);
+    border:1px solid var(--primary);
+}
+
+.card--factory__container__rt{
+    width:99px;
+}
+
+.card--factory__image{
+    width: 99px;
+    height: 97px
+}
+
+
+
+
+.card--factory__name{
+    padding: 4px 0;
+    text-align: center;
+    width:100%;
+}
+
+.card--factory__location_box{
+    padding: 4px 0;
+    width:100%;
+}
+
+/* .card--factory__location__icon{
+    width:20px;
+    height:27px;
+} */
+
+.btn--map-location{
+    margin-right:5px;
+    width:20px;
+    height:27px;
+    background: url(../images/location.svg) no-repeat center;
+}
+
+.btn--map-location:hover, .btn--map-location:focus{
+    margin-right:5px;
+    width:20px;
+    height:27px;
+    background: url(../images/location_c_primary.svg) no-repeat center;
+}
+
 
 
 
@@ -410,20 +535,6 @@ container - flex
     padding: 10px 0;
 }
 
-.col_a{
-    width:var(--logo-width);
-}
-
-.col_a_sm{
-    width: calc(var(--logo-width) + 1.5rem);
-}
-
-.col_a_med{
-    width: calc(var(--logo-width) + 7.25rem);
-}
-
-
-
 
 .col_drag_drop{
     display:flex;
@@ -435,16 +546,9 @@ container - flex
     text-align: center;
 }
 
-.card{
-    background-color: bisque;
-    height: 122px;
-    width: 80px;
-}
 
 
 /* page specific blocks */
-
-
 
 
 .number_of_pieces{
