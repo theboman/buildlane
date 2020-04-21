@@ -15,10 +15,6 @@ container - flex
 
 
 
-
-* note this could also be a grid.
-
-
 ------------Table of Contents----------- 
 1 Globals 
     1.1 Fonts 
@@ -328,8 +324,8 @@ button[type="submit"][disabled] {
 /* --------------Input Fileds-------------- */
 /* ---------------------------------------- */
 
-.input--txt-area_additional_notes {
 
+.input--txt-area_additional_notes {
     width: 792px;
     height: 110px;
     margin: 1px 0 10px 0;
@@ -348,7 +344,7 @@ button[type="submit"][disabled] {
 
 
 
-/* input that pushs the graphic right */
+/* input with icon right */
 .input {
     width: 100%;
     margin: 1px 0 10px 0;
@@ -383,8 +379,7 @@ button[type="submit"][disabled] {
 /* ---------------------------------------- */
 
 
-/* Card--Upload  Add inspiration     */
-/* !!!need to fix the bem names vVv */
+/* Card--Upload  Add inspiration section, cards for uploaded images    */
 
 .card--upload_inspiration{
     position: relative;
@@ -402,9 +397,12 @@ button[type="submit"][disabled] {
 }
 
 .card--upload_spacer{
+    /* just the left box to push over this top section */
     height:15px;
 }
 
+
+/* technically a btn will move, was thinking of animating */
 .card--upload_delete{
     position: absolute;
     left: 68px;
@@ -446,6 +444,7 @@ button[type="submit"][disabled] {
 
 
 /* ---------- card--factory -------------*/
+/* choosing your factory section  */
 
 .card--factory{
     padding:5px;

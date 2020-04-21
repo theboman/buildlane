@@ -13,13 +13,15 @@ we will be using JS and JQuery :)
 ---
 #### :white_check_mark: Todos
 - [ ] style check box / radio
-- [x] style button with graphic
 - [ ] style button square right hand side
-- [x] style submit buttton
-- [ ] focus on firefox - fix with hover
+- [ ] focus select dropdown firefox - fix with hover
+- [ ] style select drop down shadow etc
+- [ ] hover info? or modals for factory specs
+
 - [x] card--uploaded images
 - [x] card--factory
-- [ ] select drop down styling /drop shadow etc
+- [x] style submit buttton
+- [x] style button with graphic
 
 
 
