@@ -3,9 +3,9 @@
 ## live staging server for review
 [Live server](https://priceless-mayer-6b4cb7.netlify.app/)
 
-## :question: Questions on communication between front end backend :question:
+---
 
-answer, we will be using JS and JQuery :)
+we will be using JS and JQuery :)
 
 - Javascript(vanilla) /JQuery? 
 - form validation
