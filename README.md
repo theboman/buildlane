@@ -12,6 +12,7 @@ we will be using JS and JQuery :)
 
 ---
 #### :white_check_mark: Todos
+<span style='background-color:#999999'>
 - [ ] style check box / radio
 - [ ] focus select dropdown firefox - fix with hover
 - [ ] style select drop down shadow etc
@@ -22,6 +23,7 @@ we will be using JS and JQuery :)
 - [ ] fix textarea input is tabed over? strange probably easy to fix
 - [ ] refactor all naming to be BEM! 
 - [ ] update documentation including this readme and CSS TOC w clear descriptions
+</span>
 #### completed 
 - [x] card--uploaded images
 - [x] card--factory
