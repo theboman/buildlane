@@ -16,12 +16,13 @@ we will be using JS and JQuery :)
 - [ ] focus select dropdown firefox - fix with hover
 - [ ] style select drop down shadow etc
 - [ ] hover info? or modals for factory specs
+- [ ] individual delete and add btns
 
 - [ ] include all svg in html, allows fill color 
 - [ ] fix textarea input is tabed over? strange probably easy to fix
 - [ ] refactor all naming to be BEM! 
 - [ ] update documentation including this readme and CSS TOC w clear descriptions
-
+#### completed 
 - [x] card--uploaded images
 - [x] card--factory
 - [x] style submit buttton
