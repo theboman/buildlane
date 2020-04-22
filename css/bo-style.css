@@ -218,21 +218,34 @@ container - flex
 /* --------------2.1 Buttons--------------- */
 /* ---------------------------------------- */
 
-/* Button {
-    padding: 0.5em 1.25em;
-    border: none;
-    border-radius: 1.333em;
-    box-shadow: 0 2px 4px 0 var(--boxshadow-dark);
-    background-color: var(--secondary);
+/* button square hover-primary */
+/* used in Optional Details on the left */
+.btn--sqr-primary{
+    padding: 0.5em 0;
+    margin-bottom: 10px;
+    width: 180px;
+    height: 40px; 
+    border-radius: 0.5em;
+    border: 1px solid var(--text-neutral);
+    box-shadow: 0 5px 4px 0 var(--boxshadow-light);
     font-size: 1.125em;
-    font-weight: bold;
+    font-weight: 500;
     text-align: center;
-    color: var(--text-light);
-    float:right;
-} */
+    text-transform: lowercase;
+    color: var(--text-neutral);
+    
+}
 
-/* --------Button with Icon to the left rounded ends --------- */
+.btn--sqr-primary:hover{
+    border: 1px solid var(--primary);
+    color: var(--text-primary);
+    background-color:var(--hover-primary);
+    box-shadow: none;
+    
+}
 
+/* --------btn with icon to the left rounded ends --------- */
+/* used in create RFQ */
 .btn-icon {
     margin:25px;
     padding: 0.5em 1.25em 0.5em 65px;
@@ -340,8 +353,6 @@ button[type="submit"][disabled] {
     background-position:756px 10px;
     resize: none;
 }
-
-
 
 
 /* input with icon right */
