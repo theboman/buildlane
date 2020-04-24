@@ -15,7 +15,8 @@ we will be using JS and JQuery :)
 
 - [ ] style check box / radio
 - [ ] focus select dropdown firefox - fix with hover
-- [ ] style select drop down shadow etc
+- [ ] style select drop down shadow etc (almost!)
+    - [ ] bug with select state over other selects z-index sorting issue 
 - [ ] hover info? or modals for factory specs
 - [ ] individual delete and add btns
 
@@ -23,6 +24,9 @@ we will be using JS and JQuery :)
 - [ ] fix textarea input is tabed over? strange probably easy to fix
 - [ ] refactor all naming to be BEM! 
 - [ ] update documentation including this readme and CSS TOC w clear descriptions
+
+- [ ] start coding the front end with back!
+- [ ] simple verification
 
 #### completed 
 - [x] style card--uploaded images
