@@ -16,7 +16,7 @@ we will be using JS and JQuery :)
 - [ ] style check box / radio
 - [ ] focus select dropdown firefox - fix with hover
 - [ ] style select drop down shadow etc (almost!)
-    - [ ] bug with select state over other selects z-index sorting issue 
+    - [x] bug with select state over other selects z-index sorting issue 
 - [ ] hover info? or modals for factory specs
 - [ ] individual delete and add btns
 
