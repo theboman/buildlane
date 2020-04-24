@@ -62,7 +62,7 @@
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 20px;
-    opacity: 0.3;
+    /* opacity: 0.3; */
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
   }
