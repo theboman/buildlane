@@ -186,6 +186,10 @@ container - flex
     height:110px;
 }
 
+.pad_10{
+    padding: 10px 0;
+}
+
 
 /* leftmost column spacer, indent */
 
@@ -228,6 +232,7 @@ container - flex
     border-radius: 0.5em;
     border: 1px solid var(--text-neutral);
     box-shadow: 0 5px 4px 0 var(--boxshadow-light);
+    background: var(--light)
     font-size: 1.125em;
     font-weight: 500;
     text-align: center;
@@ -333,11 +338,13 @@ button[type="submit"][disabled] {
     color: var(--text-light-neutral);
 }
 
+/* -------------------------------------------------------------- */
 /* ---------------------------------------- */
 /* --------------Input Fileds-------------- */
 /* ---------------------------------------- */
+/* -------------------------------------------------------------- */
 
-
+/* this is the textarea input box at the bottom of the page */
 .input--txt-area_additional_notes {
     width: 792px;
     height: 110px;
@@ -359,7 +366,8 @@ button[type="submit"][disabled] {
 .input {
     width: 100%;
     margin: 1px 0 10px 0;
-    padding: 0.5em 2.222em 0.5em 1em;
+    /* padding: 0.5em 2.222em 0.5em 1em; */
+    padding: 10px 2.222em 9px 1em;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -378,7 +386,94 @@ button[type="submit"][disabled] {
 }
 
 
+/* ---------------------------------------- */
+/* ------------- Select Box  -------------- */
+/* ---------------------------------------- */
 
+/* initial div needs relative */
+.custom-select {
+    position: relative;
+
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: white;
+    
+
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #111 transparent transparent transparent;
+    
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: var(--text-light-neutral);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    /* box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.5); */
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* check boxes */
 
 [type="checkbox"]:checked + label .custom-checkbox {
     background: #333333;

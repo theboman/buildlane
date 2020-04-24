@@ -52,6 +52,9 @@
 
     --modal-width: calc(100vw - 160px);
     --modal-body-padding: 120px;
+
+
+    --box-shadow-A: 0 8px 11px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*** Global ***/

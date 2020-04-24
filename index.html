@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/x-icon" href="https://buildlane.com/images/favicon.ico">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/bo-style.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/select-box.css" rel="stylesheet" type="text/css" media="screen">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.js"></script>
@@ -207,12 +208,57 @@
                             Create New Project
                         </a>
                     </div>
-                    <select class="input-addtoproject input input--downarrow" id="add_to_project" name="add_to_project">
-                        <option value="project 1">Project_1</option>
-                        <option value="project 2">Project_2</option>
-                        <option value="project 3">Project_3</option>
-                        <option value="project 4">Project_4</option>
-                    </select>
+                    <div class="select-box-add-to-project" style="padding:5px 0;">
+                        <div class="select-box select-box-leg_base_material">
+                            <!-- FORM DATA FOR SELECT ONLY -->
+                    
+                            <div class="select-box__current" tabindex="1">
+                                <!-- This select box uses both the default select box and a ul for the drop down box display both need to be set -->
+                                <!-- DATA and DISPLAY BOX are seperate! --> 
+                                <div class="select-box__value">
+                                    <!-- can disable in input -->
+                                    <!-- <input class="select-box__input" type="radio" id="0" value="1" name="leg_base_material" checked="checked" disabled/> -->
+                                    <input class="select-box__input" type="radio" id="A0" value="1" name="add_to_project" checked="checked" />
+                                    <p class="select-box__input-text">Hard Rock</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="A1" value="2" name="add_to_project" checked="checked" />
+                                    <p class="select-box__input-text">Monzingo</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="A2" value="3" name="add_to_project" checked="checked" />
+                                    <p class="select-box__input-text">Lakeshore Plaza</p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="A3" value="4" name="add_to_project" checked="checked" />
+                                    <p class="select-box__input-text">580 Rockafeller</p>
+                                </div>
+                    
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="A7" value="8" name="add_to_project" checked="checked" />
+                                    <p class="select-box__input-text">Choose a Project</p>
+                                </div>
+                               
+                                <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" /></div>
+                    
+                    
+                            <!-- DISPLAY BOX PORTION ONLY !!!! -->
+                            <ul class="select-box__list">
+                                <li>
+                                    <!-- add noHover to class if you want to make unselectable -->
+                                    <label class="select-box__option" for="A0" aria-hidden="aria-hidden">Hard Rock</label></li>
+                                <li>
+                                    <label class="select-box__option" for="A1" aria-hidden="aria-hidden">Monzingo</label></li>
+                                <li>
+                                    <label class="select-box__option" for="A2" aria-hidden="aria-hidden">Lakeshore Plaza</label></li>
+                                <li>
+                                    <label class="select-box__option" for="A3" aria-hidden="aria-hidden">580 Rockafeller</label></li>
+                    
+                                <!-- last is the first item displayed by default so            -->
+                                <!-- if you want blank and not selectable after user chooses leave this last one as blank -->
+                            </ul>
+                        </div>
+                    </div>
             
             </div>
 
@@ -328,24 +374,184 @@
                         <div class="h3">
                             <label for="add_to_project">Leg/Base Material <span class="fc_pr">*</span></label>
                         </div>
-                        <select class="input input--downarrow" id="add_to_project" name="add_to_project">
-                            <option value="project_1">Project_1</option>
-                            <option value="project_2">Project_2</option>
-                            <option value="project_3">Project_3</option>
-                            <option value="project_4">Project_4</option>
-                        </select>
+
+
+                        <div class="container--select-box-leg-base-material" >
+
+
+                            <div class="select-box select-box-leg_base_material">
+                                <!-- FORM DATA FOR SELECT ONLY -->
+                    
+                                <div class="select-box__current" tabindex="1">
+                                    <!-- This select box uses both the default select box and a ul for the drop down box display both need to be set -->
+                                    <!-- DATA and DISPLAY BOX are seperate! --> 
+                                    <div class="select-box__value">
+                                        <!-- can disable in input -->
+                                        <!-- <input class="select-box__input" type="radio" id="0" value="1" name="leg_base_material" checked="checked" disabled/> -->
+                                        <input class="select-box__input" type="radio" id="0" value="1" name="leg_base_material" checked="checked" disabled/>
+                                        <p class="select-box__input-text">Wood Species</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="1" value="2" name="leg_base_material" checked="checked" />
+                                        <p class="select-box__input-text">Alder</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="2" value="3" name="leg_base_material" checked="checked" />
+                                        <p class="select-box__input-text">Loreum Ipsum</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="3" value="4" name="leg_base_material" checked="checked" />
+                                        <p class="select-box__input-text">Oak</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="4" value="5" name="leg_base_material" checked="checked" />
+                                        <p class="select-box__input-text">Metal</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="5" value="6" name="leg_base_material" checked="checked" />
+                                        <p class="select-box__input-text">(COM) Client Provides Own Material</p>
+                                    </div>
+                    
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="6" value="7" name="leg_base_material" checked="checked" />
+                                        <p class="select-box__input-text">N/A</p>
+                                    </div>
+                    
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="7" value="8" name="leg_base_material" checked="checked" />
+                                        <p class="select-box__input-text">Choose a Leg Material</p>
+                                    </div>
+                                
+                                    <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" /></div>
+                    
+                    
+                                <!-- DISPLAY BOX PORTION ONLY !!!! -->
+                                <ul class="select-box__list">
+                    
+                                    <li>
+                                        <!-- add noHover, to class if you want to make unselectable -->
+                                        <label class="select-box__option noHover bold" for="0" aria-hidden="aria-hidden">Wood Species</label></li>
+                                    <li>
+                                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">Alder</label></li>
+                                    <li>
+                                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">Loreum Ipsum</label></li>
+                                    <li>
+                                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">Oak</label></li>
+                                    <!-- <div class="border-top"></div> -->
+                                    <hr class="hr-select">
+                                    <li>
+                                        <label class="select-box__option" for="4" aria-hidden="aria-hidden"> 
+                                            Metal 
+                                        </label>
+                                        
+                                    </li>
+                                    <hr class="hr-select">
+                                    <li>
+                                        <label class="select-box__option" for="5" aria-hidden="aria-hidden">(COM) Client Provides Own Material</label></li>
+                                    <li><label class="select-box__option" for="6" aria-hidden="aria-hidden">N/A</label></li>
+                                    <!-- last is the first item displayed by default so            -->
+                                    <!-- if you want blank and not selectable after user chooses leave this last one as blank -->
+                                </ul>
+                            </div>
+                    
+                    
+                        </div>
+
+
+
+
                     </div>
 
                     <div class="input_leg_finish wd_375">
                         <div class="h3">
                         <label for="add_to_project">Leg/Base Finish <span class="fc_pr">*</span></label>
                         </div>
-                        <select class="input input--downarrow" id="add_to_project" name="add_to_project">
-                            <option value="project_1">Project_1</option>
-                            <option value="project_2">Project_2</option>
-                            <option value="project_3">Project_3</option>
-                            <option value="project_4">Project_4</option>
-                        </select>
+
+
+                        <div class="container--select-box-leg-base-material">
+        
+        
+                            <div class="select-box select-box-leg_base_material">
+                                <!-- FORM DATA FOR SELECT ONLY -->
+                        
+                                <div class="select-box__current" tabindex="1">
+                                    <!-- This select box uses both the default select box and a ul for the drop down box display both need to be set -->
+                                    <!-- DATA and DISPLAY BOX are seperate! --> 
+                                    <div class="select-box__value">
+                                        <!-- can disable in input -->
+                                        <!-- <input class="select-box__input" type="radio" id="0" value="1" name="leg-base-finish" checked="checked" disabled/> -->
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-0" value="1" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">White</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-1" value="2" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">Grey</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-2" value="3" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">Dark Charcoal</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-3" value="4" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">Natural</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-4" value="5" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">Lorum Ipsum</p>
+                                    </div>
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-5" value="6" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">Brass</p>
+                                    </div>
+                        
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-6" value="7" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">Silver</p>
+                                    </div>
+                
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-7" value="8" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">(COM) Client Provides Own Finish</p>
+                                    </div>
+                
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-8" value="9" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">N/A</p>
+                                    </div>
+                        
+                                    <div class="select-box__value">
+                                        <input class="select-box__input" type="radio" id="select-leg-finish-9" value="10" name="leg-base-finish" checked="checked" />
+                                        <p class="select-box__input-text">Choose a Leg Finish</p>
+                                    </div>
+                                
+                                    <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" /></div>
+                        
+                        
+                                <!-- DISPLAY BOX PORTION ONLY !!!! -->
+                                <ul class="select-box__list" style="background: #fff;">
+                                    <!-- add noHover to class if you want to make unselectable -->
+                                    <li><label class="select-box__option" for="select-leg-finish-0" aria-hidden="aria-hidden">White</label></li>
+                                    <li><label class="select-box__option" for="select-leg-finish-1" aria-hidden="aria-hidden">Grey</label></li>
+                                    <li><label class="select-box__option" for="select-leg-finish-2" aria-hidden="aria-hidden">Dark Charcoal</label></li>
+                                    <li><label class="select-box__option" for="select-leg-finish-3" aria-hidden="aria-hidden">Natural</label></li>
+                                    <li><label class="select-box__option" for="select-leg-finish-4" aria-hidden="aria-hidden">Lorum Ipsum</label></li>
+                                    <hr class="hr-select">
+                                    <li><label class="select-box__option" for="select-leg-finish-5" aria-hidden="aria-hidden">Brass</label></li>
+                                    <li><label class="select-box__option" for="select-leg-finish-6" aria-hidden="aria-hidden">Silver</label></li>
+                                    <hr class="hr-select">
+                                    <li><label class="select-box__option" for="select-leg-finish-7" aria-hidden="aria-hidden">(COM) Client Provides Own Finish</label></li>
+                                    <hr class="hr-select"></hr>
+                                    <li><label class="select-box__option" for="select-leg-finish-8" aria-hidden="aria-hidden">N/A</label></li>
+                                    <!-- last is the first item displayed by default so            -->
+                                    <!-- if you want blank and not selectable after user chooses leave this last one as blank -->
+                                </ul>
+                            </div>
+                        
+                        
+                    </div>
+
+
+
                     </div>
 
                 </div>
@@ -399,44 +605,118 @@
 
             <div class="flex flex-jstf-btwn" >
                 <!-- left side column for inputs -->
-                <div class="wd_790">
+                <div class="left-side wd_790">
 
-                    <div class="input_dimensions wd_790">
+                    <div class="input_optional_details_hardware wd_790">
                         <div class="h3">
-                        <label for="overall_dimensions">Hardware (COM)</label>
+                        <label for="hardward_com">Hardware (COM)</label>
+                        <button>x</button>
                         </div >  
                         <input 
                             class="input input--pencil" 
                             type="text" 
                             placeholder='Threaded Screw Solid Brass Caster - 1 1/4 Inch Wheels' 
                             value="" 
-                            id="overall_dimensions">
+                            id="hardware_com">
                     </div>
 
-                    <div class="wd_290">
+                    <div class="input_optional_details_leg_height wd_290">
                         <div class="h3">
-                        <label for="overall_dimensions">Leg Height</label>
+                        <label for="optional_details">Leg Height</label>
+                        <button>x</button>
                         </div>  
                         <input 
                             class="input input--pencil" 
                             type="text" 
                             placeholder='4” H' 
                             value="" 
-                            id="overall_dimensions">
+                            id="optional_details">
                     </div>
                     
-                    <div class="wd_790">
-                        <div class="wd_290">
+
+                    <!-- working here!  -->
+
+
+
+                    <div class="input_optional_details_cushion_fill wd_790">
+
+                        <div class="input_cushion_fill">
                             <div class="h3">
-                            <label for="overall_dimensions">Cushsion Fill</label>
+                                <label for="cushion_fill">Cushion Fill</label><button>x</button>
+                            </div>
+                            <div class="wrapper flex">
+
+
+
+                                
+
+
+
+                                <!-- <div class=" wd_290"> -->
+
+                                    <div class="container--select-box-leg-base-material wd_290">
+        
+        
+                                        <div class="select-box select-box-cushion-fill">
+                                            <!-- FORM DATA FOR SELECT ONLY -->
+                                    
+                                            <div class="select-box__current" tabindex="1">
+                                                <!-- This select box uses both the default select box and a ul for the drop down box display both need to be set -->
+                                                <!-- DATA and DISPLAY BOX are seperate! --> 
+                                                <div class="select-box__value">
+                                                    <!-- can disable in input -->
+                                                    <!-- <input class="select-box__input" type="radio" id="0" value="1" name="leg-base-finish" checked="checked" disabled/> -->
+                                                    <input class="select-box__input" type="radio" id="select-cushion-fill-0" value="1" name="cushion-fill" checked="checked" />
+                                                    <p class="select-box__input-text">All</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="select-cushion-fill-1" value="2" name="cushion-fill" checked="checked" />
+                                                    <p class="select-box__input-text">Seat Cushion</p>
+                                                </div>
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="select-cushion-fill-2" value="3" name="cushion-fill" checked="checked" />
+                                                    <p class="select-box__input-text">Back Cushion</p>
+                                                </div>
+                                                
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="select-cushion-fill-3" value="4" name="cushion-fill" checked="checked" />
+                                                    <p class="select-box__input-text">Loreum Ipsum</p>
+                                                </div>
+                                    
+                                                <div class="select-box__value">
+                                                    <input class="select-box__input" type="radio" id="select-cushion-fill-3" value="4" name="cushion-fill" checked="checked" />
+                                                    <p class="select-box__input-text">Choose a Cushion Fill</p>
+                                                </div>
+                                            
+                                                <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true" /></div>
+                                    
+                                    
+                                            <!-- DISPLAY BOX PORTION ONLY !!!! -->
+                                            <ul class="select-box__list" style="background: #fff;">
+                                                <!-- add noHover to class if you want to make unselectable -->
+                                                <li><label class="select-box__option" for="select-cushion-fill-0" aria-hidden="aria-hidden">All</label></li>
+                                                <li><label class="select-box__option" for="select-cushion-fill-1" aria-hidden="aria-hidden">Seat Cushion</label></li>
+                                                <li><label class="select-box__option" for="select-cushion-fill-2" aria-hidden="aria-hidden">Back Cushion</label></li>
+                                                <li><label class="select-box__option" for="select-cushion-fill-3" aria-hidden="aria-hidden">Loreum Ipsum</label></li>
+                                                <!-- last is the first item displayed by default so            -->
+                                                <!-- if you want blank and not selectable after user chooses leave this last one as blank -->
+                                            </ul>
+                                        </div>
+                                    
+                                    
+                                    </div>
+                                 
+                                <!-- </div> -->
+
+                                <button>+</button>
+
                             </div>  
-                            <input 
-                                class="input input--pencil" 
-                                type="text" placeholder='4” H' 
-                                value="" 
-                                id="overall_dimensions">
                         </div>
-                        <div class="flex flex-jstf-btwn">
+
+
+
+
+                        <div class="input_radio_cushion_fill flex flex-jstf-btwn">
                             <div>
                             <input 
                                 type="radio" 

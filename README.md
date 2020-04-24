@@ -25,11 +25,12 @@ we will be using JS and JQuery :)
 - [ ] update documentation including this readme and CSS TOC w clear descriptions
 
 #### completed 
-- [x] card--uploaded images
-- [x] card--factory
-- [x] style submit buttton
-- [x] style button with graphic
-- [x] style button square right hand side
+- [x] style card--uploaded images
+- [x] style card--factory
+- [x] style btn--submit buttton
+- [x] style btn--icon-left with graphic
+- [x] style btn--square /used right hand side optional 
+- [x] style text area /used right hand side optional 
 
 
 
